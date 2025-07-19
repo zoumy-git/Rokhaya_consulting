@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rokhaya Consulting Group</title>
   <link rel="stylesheet" href="style.css" />
-<style>
+  <style>
   
 
   .destinations-section {
@@ -221,7 +221,7 @@ choose .process ul li {
 
 <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 30px; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
   <div style="display: flex; align-items: center;">
-    <img src="images/IMG_3184.PNG" alt="Logo Rokhaya" style="height: 50px; margin-right: 15px;" />
+    <img src="./images/IMG_3184.PNG" alt="Logo Rokhaya" style="height: 50px; margin-right: 15px;" />
     <div>
       <h1 style="margin: 0; font-size: 1.8rem; color: #222;">Rokhaya Consulting Group</h1>
       <p style="margin: 0; font-size: 0.85rem; color: #555;">Un accompagnement fiable pour vos études et voyages à l'international</p>
@@ -236,10 +236,10 @@ choose .process ul li {
       <li><a href="dashboard_stats.php" style="text-decoration: none; color: #007BFF; font-weight: 600;">Dashboard</a></li>
       
        <?php if (isset($_SESSION['admin'])): ?>
-      <li><a href="logout.php" style="color: red;">Déconnexion</a></li>
-    <?php else: ?>
-      <li><a href="auth.php">Connexion</a></li>
-    <?php endif; ?>
+    <li><a href="logout.php" style="color: red;">Déconnexion</a></li>
+  <?php else: ?>
+    <li><a href="auth.php">Connexion</a></li>
+  <?php endif; ?>
 
     </ul>
   </nav>
@@ -251,14 +251,15 @@ choose .process ul li {
   <p style="font-size: 1.1rem; color: #555; max-width: 700px; margin: 0 auto 25px auto; line-height: 1.5;">
     Nous sommes spécialisés dans l’accompagnement pour vos projets d’études, de visite, ou d’affaires à l’international. Que ce soit pour obtenir un visa pour l’Europe, le Canada, les USA ou d'autres destinations, notre équipe vous guide de A à Z dans toutes vos démarches administratives, vous assurant gain de temps, fiabilité et tranquillité d’esprit.
   </p>
- id="video-banner" style="position: relative; height: 100vh; overflow: hidden;">
-  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
-    <source src="/rokhaya_consulting/templates/images/introduction.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas la vidéo HTML5.
-  </video>
-  <div style="position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px; background: rgba(0,0,0,0.4);">
-    <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 20px;">Agence d'obtention de visa</h1>
-    <p style="font-size: 1.2rem; max-width: 800px;">Un accompagnement fiable pour vos études, voyages et affaires à l’international. Évitez les démarches fastidieuses, réduisez les risques d’erreur, et gagnez du temps.</p>
+  <div id="video-banner" style="position: relative; height: 100vh; overflow: hidden;">
+    <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+      <source src="./images/introduction.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+    <div style="position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px; background: rgba(0,0,0,0.4);">
+      <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 20px;">Agence d'obtention de visa</h1>
+      <p style="font-size: 1.2rem; max-width: 800px;">Un accompagnement fiable pour vos études, voyages et affaires à l’international. Évitez les démarches fastidieuses, réduisez les risques d’erreur, et gagnez du temps.</p>
+    </div>
   </div>
 </section>
 <section style="background-color: #fff; padding: 60px 30px;">
@@ -287,9 +288,6 @@ choose .process ul li {
   </div>
 </section>
 
-</head>
-<body>
-
 <section id="etapes-service" style="padding: 60px 20px; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;">
   <h2 style="text-align: center; color: #007BFF; margin-bottom: 50px; font-size: 2rem;">Comment fonctionne notre service ?</h2>
 
@@ -297,37 +295,37 @@ choose .process ul li {
 
     <div style="text-align: center; width: 180px;">
       <div style="width: 120px; height: 120px; border: 2px dashed #007BFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: auto; margin-bottom: 10px;">
-        <img src="/rokhaya_consulting/templates/images/connecter-vs.png" alt="Commander visa" style="width: 60px;">
+        <img src="./images/connecter-vs.png" alt="Commander visa" style="width: 60px;">
       </div>
       <h3 style="color: #007BFF; font-size: 1rem;">1. Commandez votre visa</h3>
       <p style="font-size: 0.9rem;">Choisissez votre pays et type de visa.</p>
     </div>
 
-    <img src="/rokhaya_consulting/templates/images/fleche1.avif" alt="flèche" style="height: 60px;">
+    <img src="./images/fleche1.avif" alt="flèche" style="height: 60px;">
 
     <div style="text-align: center; width: 180px;">
       <div style="width: 120px; height: 120px; border: 2px dashed #007BFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: auto; margin-bottom: 10px;">
-        <img src="/rokhaya_consulting/templates/images/recevez.png" alt="Envoyer documents" style="width: 60px;">
+        <img src="./images/recevez.png" alt="Envoyer documents" style="width: 60px;">
       </div>
       <h3 style="color: #007BFF; font-size: 1rem;">2. Envoyez vos documents</h3>
       <p style="font-size: 0.9rem;">Envoyez vos pièces en ligne de manière sécurisée.</p>
     </div>
 
-    <img src="/rokhaya_consulting/templates/images/fleche1.avif" alt="flèche" style="height: 60px;">
+    <img src="./images/fleche1.avif" alt="flèche" style="height: 60px;">
 
     <div style="text-align: center; width: 180px;">
       <div style="width: 120px; height: 120px; border: 2px dashed #007BFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: auto; margin-bottom: 10px;">
-        <img src="/rokhaya_consulting/templates/images/traitons.png" alt="Traitement rapide" style="width: 60px;">
+        <img src="./images/traitons.png" alt="Traitement rapide" style="width: 60px;">
       </div>
       <h3 style="color: #007BFF; font-size: 1rem;">3. Traitement rapide</h3>
       <p style="font-size: 0.9rem;">Votre demande est traitée efficacement.</p>
     </div>
 
-    <img src="/rokhaya_consulting/templates/images/fleche1.avif" alt="flèche" style="height: 60px;">
+    <img src="./images/fleche1.avif" alt="flèche" style="height: 60px;">
 
     <div style="text-align: center; width: 180px;">
       <div style="width: 120px; height: 120px; border: 2px dashed #007BFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: auto; margin-bottom: 10px;">
-        <img src="/rokhaya_consulting/templates/images/recever visa.png" alt="Recevez votre visa" style="width: 60px;">
+        <img src="./images/recever visa.png" alt="Recevez votre visa" style="width: 60px;">
       </div>
       <h3 style="color: #007BFF; font-size: 1rem;">4. Recevez votre visa</h3>
       <p style="font-size: 0.9rem;">Livré par email ou en main propre.</p>
@@ -348,12 +346,12 @@ choose .process ul li {
   <div class="destinations-wrapper" style="display: flex; align-items: center; position: relative; overflow: hidden; padding: 0 40px;">
     <button class="scroll-btn scroll-left" onclick="scrollDestinations(-1)" style="position: absolute; left: 0; z-index: 10;">&#8592;</button>
     <div id="destinations-carousel" class="destinations-carousel" style="display: flex; gap: 30px; overflow-x: auto; scroll-behavior: smooth; padding: 20px 0; scrollbar-width: none;">
-      <div class="destination-card"><img src="images/usaa.jpg" alt="États-Unis" /><h3>États-Unis</h3><a href="reservation.php?pays=etats-unis" class="btn">Explorer ✈️</a></div>
-      <div class="destination-card"><img src="images/canada.jpg" alt="Canada" /><h3>Canada</h3><a href="reservation.php?pays=canada" class="btn">Explorer ✈️</a></div>
-      <div class="destination-card"><img src="images/espagn.jpg" alt="Espagne" /><h3>Espagne</h3><a href="reservation.php?pays=espagne" class="btn">Explorer ✈️</a></div>
-      <div class="destination-card"><img src="images/france.jpg" alt="France" /><h3>France</h3><a href="reservation.php?pays=france" class="btn">Explorer ✈️</a></div>
-      <div class="destination-card"><img src="images/luxemb.jpg" alt="Luxembourg" /><h3>Luxembourg</h3><a href="reservation.php?pays=luxembourg" class="btn">Explorer ✈️</a></div>
-      <div class="destination-card"><img src="images/Belgiqu.jpg" alt="Belgique" /><h3>Belgique</h3><a href="reservation.php?pays=belgique" class="btn">Explorer ✈️</a></div>
+      <div class="destination-card"><img src="./images/usaa.jpg" alt="États-Unis" /><h3>États-Unis</h3><a href="reservation.php?pays=etats-unis" class="btn">Explorer ✈️</a></div>
+      <div class="destination-card"><img src="./images/canada.jpg" alt="Canada" /><h3>Canada</h3><a href="reservation.php?pays=canada" class="btn">Explorer ✈️</a></div>
+      <div class="destination-card"><img src="./images/espagn.jpg" alt="Espagne" /><h3>Espagne</h3><a href="reservation.php?pays=espagne" class="btn">Explorer ✈️</a></div>
+      <div class="destination-card"><img src="./images/france.jpg" alt="France" /><h3>France</h3><a href="reservation.php?pays=france" class="btn">Explorer ✈️</a></div>
+      <div class="destination-card"><img src="./images/luxemb.jpg" alt="Luxembourg" /><h3>Luxembourg</h3><a href="reservation.php?pays=luxembourg" class="btn">Explorer ✈️</a></div>
+      <div class="destination-card"><img src="./images/Belgiqu.jpg" alt="Belgique" /><h3>Belgique</h3><a href="reservation.php?pays=belgique" class="btn">Explorer ✈️</a></div>
     </div>
     <button class="scroll-btn scroll-right" onclick="scrollDestinations(1)" style="position: absolute; right: 0; z-index: 10;">&#8594;</button>
   </div>
@@ -423,15 +421,15 @@ choose .process ul li {
     <div style="min-width: 250px; text-align: right;">
       <h3 style="margin-bottom: 10px;">Suivez-nous</h3>
       <div style="display: flex; align-items: center; justify-content: flex-end; margin-bottom: 10px;">
-        <img src="images/facebook.jpg" alt="Facebook" style="width: 24px; margin-right: 10px;">
+        <img src="./images/facebook.jpg" alt="Facebook" style="width: 24px; margin-right: 10px;">
         <a href="https://facebook.com" target="_blank" style="color: white; text-decoration: none;">Facebook</a>
       </div>
       <div style="display: flex; align-items: center; justify-content: flex-end; margin-bottom: 10px;">
-        <img src="images/insta.jpg" alt="Instagram" style="width: 24px; margin-right: 10px;">
+        <img src="./images/insta.jpg" alt="Instagram" style="width: 24px; margin-right: 10px;">
         <a href="https://instagram.com" target="_blank" style="color: white; text-decoration: none;">Instagram</a>
       </div>
       <div style="display: flex; align-items: center; justify-content: flex-end;">
-        <img src="images/whatsapp.jpg" alt="WhatsApp" style="width: 24px; margin-right: 10px;">
+        <img src="./images/whatsapp.jpg" alt="WhatsApp" style="width: 24px; margin-right: 10px;">
         <a href="https://wa.me/123456789" target="_blank" style="color: white; text-decoration: none;">WhatsApp</a>
       </div>
     </div>
